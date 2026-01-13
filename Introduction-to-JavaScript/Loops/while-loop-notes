@@ -1,0 +1,10 @@
+// countdown while loop example
+
+var counter = 3;
+
+while (counter > 0) {
+    console.log(counter);
+    counter = counter - 1;
+}
+console.log('Happy New Year!');
+// while loop will keep looping through a code block as long as a specified conditon is true.

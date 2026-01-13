@@ -1,0 +1,13 @@
+// Functional programming
+
+var currencyOne = 100;
+var currencyTwo = 0;
+var exchangeRate = 1.2;
+//declared all variables are camelcase where the first letter of the word is lowercase and the first letter of the subsequent words arewithout spaces and in uppercase
+
+function convertCurrency(amount, rate) {
+    return amount * rate;
+}
+currencyTwo = convertCurrency(currencyOne, exchangeRate);
+
+console.log(currencyTwo); // 120

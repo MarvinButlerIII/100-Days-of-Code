@@ -1,0 +1,23 @@
+// switch statement
+var place = 'third';
+
+switch(place) {
+    case 'first':
+        console.log('Gold');
+        break;
+    case 'second':
+        console.log('Silver');
+        break;
+    case 'third':
+        console.log('Bronze');
+        break;
+    default:
+        console.log('No Metal');
+}
+
+/*switch works well with discrete, exact matches (like strings or numbers)
+
+if (age > 18 && age < 60) {
+    console.log("Elgible for the program");
+    //less flexible than if else for evaluating complex conditions or ranges.
+}*/

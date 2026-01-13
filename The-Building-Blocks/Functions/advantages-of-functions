@@ -1,0 +1,41 @@
+// Function example
+
+function myFunc() {
+    console.log("Hello World!");
+}
+myFunc();
+
+// Add two numbers
+
+var a = 10;
+var b = 20;
+var c = a + b;
+
+console.log(c);
+
+function addTwoNums() {
+    // code goes here in the body of the funciton
+}
+
+// Actual function example
+
+function addTwoNums() {
+    var a = 10;
+    var b = 20;
+    var c = a + b;
+    console.log(c);
+}
+addTwoNums(c);
+
+// devs say, "run a function", or "call a function"
+
+// Passing values to the function known as, "function parameters"
+// values passed to the funtion are called, "Arguements"
+// By passing values as as arguements you can call it as many times as you want.
+
+function addTwoNums(a,b) {
+    var c = a + b;
+    console.log(c);
+}
+addTwoNums(4,2);
+addTwoNums(4,4);

@@ -1,0 +1,15 @@
+// Train example using javascript
+
+var carriage0 = 'wheat';
+var carriage1 = 'barley';
+var carriage2 = 'salt';
+var carriage3 = 'potato';
+var carriage4 = 'rocks'
+
+console.log(carriage0);
+
+// Introduce a second train method with array literal syntax
+
+var train1 = ["wheat", "barley", "potato", "salt", "rocks"];
+console.log(train1[0]);
+

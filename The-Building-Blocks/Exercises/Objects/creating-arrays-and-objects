@@ -1,0 +1,32 @@
+// In this exercise lab you will practive creating arrays and objects.
+
+// create new empty array literal and assign it to the variable 'clothes'
+
+var clothes = [];
+
+// add 5 favorite items of clothing as a string using push() method
+
+clothes.push('shirts');
+clothes.push('hats');
+clothes.push('jeans');
+clothes.push('shoes');
+clothes.push('jackets');
+//console.log(clothes);
+// Remove the fifth piece of clothing from the array using the pop() method
+
+clothes.pop();
+//console.log(clothes);
+
+// Add new piece of clothes using the push method
+
+clothes.push('socks');
+console.log(clothes[2]);
+
+// Create a new empty object literal and assign it to the variable favCar
+
+
+// using dot notation assign a convertible prperty to the favCar object and give it a boolean value of your choice
+
+
+
+
