@@ -1,5 +1,0 @@
-if (weather === "sunny" && temperature > 20) {
-    console.log("Go for a picnic");
-} else if (weather === "rainy" || temperature < 10) {
-    console.log("Stay indoors");
-}
