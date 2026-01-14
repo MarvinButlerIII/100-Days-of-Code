@@ -1,0 +1,105 @@
+// Writing functional programming code
+/*
+function getTotal(a,b) {
+    return a + b
+}
+var num1 = 2;
+var num2 = 3;
+
+var total = getTotal(num1, num2);
+
+// When wrtiting FP code, we keep data and functionality seperate and pass
+// data into functions only when we want something computed
+
+function getDistance(mph, h) {
+    return mph * h
+}
+var mph = 60;
+var h = 2;
+var distance = getDistance(mph, h);
+
+// In FP, functions return new values and then use those values somewhere else in the code.
+
+function getDistance(mph, h) {
+    return mph * h
+}
+var mph = 60;
+var h = 2;
+var distance = getDistance(mph, h);
+
+console.log(distance); // <===== THIS HERE!
+
+// Object-Oriented Programming Example
+// I have a virtualPet object, I can give it a sleepy property and a nap() method
+
+var virtualPet = {
+    sleepy: true,
+    nap: function() {}
+}
+
+// If I check the sleepy property on the virtualPet object, I can confirm that it's set to true.
+// However once I run the nap() method on the virtualPet object, will the sleepy property's value change?
+
+//creating an object
+var virtualPet = {
+    sleepy: true,
+    nap: function() {
+        this.sleepy = false
+    }
+}
+console.log(virtualPet.sleepy) // true
+virtualPet.nap()
+console.log(virtualPet.sleepy) // false
+*/
+//the nap() method modifies the sleepy property of the virtualPet object by using this keyword.
+//specifically, 'this.sleepy refers to the sleepy property of the virtualPet object.
+//when the nap() method is called, it updates the property to false.
+
+// It's normal to pass a function or its invocation as an argument to another function
+
+function addTwoNums(a, b) {
+    console.log(a + b)
+}
+
+function randomNum() {
+    return Math.floor((Math.random() * 10) + 1);
+}
+function specificNum() { return 42 };
+
+var useRandom = true;
+
+var getNumber;
+
+if(useRandom) {
+    getNumber = randomNum
+} else {
+    getNumber = specificNum
+}
+
+addTwoNums(getNumber(), getNumber())
+
+// I'm re-defining the addTwoNums() function so that it is a higher-order function
+
+function addTwoNum(getNumber1, getNumber2) {
+    console.log(getNumber1() + getNumber2());
+}
+//can think of the above function declaration of addTwoNums() 
+//as describing how it will deal with getNumber1 and getNumber2 inputs
+
+// Once it recieves them as arguments, it will then attempt invoking them 
+// and concatenating the values returned from those invocations.
+
+addTwoNums(specificNum, specificNum); // returned number is 84
+addTwoNums(specificNum, randomNum); // returned number is 42 + some random number
+
+// An example of a pure function is the addTwoNums() function from the precious section
+
+function addTwoNums(a,b) {
+    return a + b;
+}
+//this function will always return the same output, based on the input.
+//as long as we give it a specific value say, 5 and 6
+
+addTwoNums(5,6); // 11
+//since Math.ransom() generates a new value each time it is called,
+//it introduces non-determinism, making functions that use it impure.

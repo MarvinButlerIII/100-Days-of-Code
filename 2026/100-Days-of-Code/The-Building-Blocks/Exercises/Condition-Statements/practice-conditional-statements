@@ -1,0 +1,47 @@
+// if else, else if, else statment practice
+
+var age = 27;
+
+if(age >= 65) {
+    console.log ("You get your income from your pension")
+} else if (age < 65 && age >= 18) {
+    console.log ("Each month you get salary")
+} else if (age < 18) {
+    console.log ("You get an allowance")
+} else {
+    // This block will run if no conditon matches
+    console.log ('The value of the age variable is not numerical');
+}
+
+// Swithch statment practice example
+
+var day = 'Tuesday';
+
+switch(day) {
+    // Add your conditions
+    case 'Monday':
+        console.log ("Leg workout day")
+        break;
+    case 'Tuesday':
+        console.log ("Arm workout day")
+        break;
+    case 'Wednesday':
+        console.log ("Leg and arm day")
+        break;
+    case 'Thursday':
+        console.log ("Run day")
+        break;
+    case 'Friday':
+        console.log ("Abs and arms day")
+        break;
+    case 'Saturday':
+        console.log ("Legs and abs day")
+        break;
+    case 'Sunday':
+        console.log ("Rest day")
+        break;
+    default:
+        // The block will run if no condition matches
+        console.log ('There is no such day');
+
+}

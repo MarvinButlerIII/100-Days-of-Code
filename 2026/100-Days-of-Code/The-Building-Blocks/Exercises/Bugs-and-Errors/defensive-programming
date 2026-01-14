@@ -1,0 +1,26 @@
+// Lets make sure that both of the arguments that are passed in satify the following critieria
+// The length of word parameter cannot be less than 2
+// The length of the match parameter must be 1
+// The type of both the word and the match parameters must be string.
+
+function letterFinder(word, match) {
+    var condition1 = typeof(word) == 'string' && word.length >= 2; //if the word is a string and the lenght is greater than or equat to 2
+    var condition2 = typeof(match) == 'string' && match.length == 1; //if the match is a string and the length is equal to 1.
+    if(condition1 && condition2) { //if both condition matches
+        for(var i = 0; i < word.length; i++) {
+            if(word[i] == match) {
+                //check if the character at this i position in the word is equal to the match
+                console.log('Found the', match, 'at', i)
+            } else {
+                console.log('---No match found at', i)
+            } 
+
+        }
+    } else {
+        //if the requirements don't match
+        console.log("Please pass correct arguments to the function.")
+    }
+    
+}
+letterFinder([],[])
+letterFinder("cat", "c",)
