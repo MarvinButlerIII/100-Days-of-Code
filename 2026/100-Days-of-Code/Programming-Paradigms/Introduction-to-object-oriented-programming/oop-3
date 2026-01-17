@@ -1,19 +1,16 @@
-var polly = new Parrot(true); // we're passing `true` to the constructor so that polly can talk
-var fiji = new Parrot(false); // we're passing `false` to the constructor so that fiji can't talk
+// OOP 3: this keyword example
 
-polly.makeSound(); // 'chirp', 'I'm a talking parrot!'
-fiji.makeSound(); // 'chirp'
+var purchase1 = {
+    shoes: 100,
+    stateTax: 1.2,
+    totalPrice: function() {
+        var calculation = this.shoes * this.stateTax;
+        console.log('Total price:' , calculation);
+    }
+}
+purchase1;
 
-polly.color; // yellow
-polly.energy; // 100
 
-polly.isActive(); // Energy is decreasing, currently at: 80
+//when using 'this' keyword it's best when you want to refer to the object itself without specifying the name.
 
-var penguin = new Bird("shriek", false, "black and white", 200); // setting all the custom properties
-penguin; // Bird {color: 'black and white', energy: 200, sound: 'shriek', canFly: false }
 
-penguin.sound; // 'shriek'
-penguin.canFly; // false
-penguin.color; // 'black and white'
-penguin.energy; // 200
-penguin.isActive(); // Energy is decreasing, currently at: 180
