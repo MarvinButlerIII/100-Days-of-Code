@@ -2,25 +2,25 @@
 
 let color = 'red'; //global scope
 
-if (color == 'red') { //block scope Curly Braces
+if (color == 'red') { //block scope Curly braces
     let color = 'blue'
 }
-//you can declare two seperate variables with the same name. If one is declared insied curly braces
+//you can declare two seperate variables with the same name. If one is declared inside curly braces
 //and the others is not, you can then only access these variables inside their scope.
 
 
 // ES5 syntax only example is var
 
-//var user = "Maranda"
+// var user = "Maranda"
 
 //before ES6 the only way to declare a variable was with var.
 
 // ES6 syntax examples are let and const
 
-//let user = "Maranda"
+let user = "Maranda"
 
-//const user = "Maranda"
+// const user = "Maranda"
 
 // The behavior of let and const is more strict you cannot uee it within your code without it being declared.
 // You cannot re-declare using the variable keyword like with using var
-// It's scoped into the block even within if statements and loops, like the far or while loops.
+// It's scoped into the block even within if statements and loops, like the for or while loops.

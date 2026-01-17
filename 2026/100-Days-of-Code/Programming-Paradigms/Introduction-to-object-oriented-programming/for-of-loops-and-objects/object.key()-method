@@ -1,0 +1,10 @@
+// Built in method Object.keys()
+
+const car2 = {
+    speed: 200,
+    color: "red"
+}
+console.log(Object.keys(car2)); // ['speed', 'color']
+
+// When I run Object.keys() and pass my car2 object, the returned value is an array of stings,
+// where each string is a property key of the properties contained in my car2 object.

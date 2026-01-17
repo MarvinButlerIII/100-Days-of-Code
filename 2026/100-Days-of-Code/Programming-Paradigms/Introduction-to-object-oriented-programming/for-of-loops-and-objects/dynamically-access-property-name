@@ -1,0 +1,23 @@
+// Access property name
+
+function testBracketsDynamicAccess() {
+    var dynamicKey;
+    if(Math.random() > 0.5) {
+        dynamicKey = "speed";
+    } else {
+        dynamicKey = "color";
+    }
+    var drone = {
+        speed: 15,
+        color: "orange"
+    }
+    
+    console.log(drone[dynamicKey]); // 15
+}
+testBracketsDynamicAccess();
+
+//value that gets output is 15, and sometimes it's orange, 
+// although I'm always accessing the drone[dynamicKey] key. 
+// Since the value of the dynamicKey is populated on the 
+// Math.random() invocation, sometimes that expression evaluates to drone["speed"], 
+// and other times that expression evaluates to drone["color"].

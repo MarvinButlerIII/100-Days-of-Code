@@ -1,0 +1,9 @@
+// for in loop being useed to loop thorugh the properties of an object not values
+
+const car = {speed: 100, color: "blue"};
+for (let key in car) {
+    console.log(key); // Output: speed, color
+}
+
+// Unlike for...of, which works on values, 
+// for in works on keys of objects or indices of arrays.

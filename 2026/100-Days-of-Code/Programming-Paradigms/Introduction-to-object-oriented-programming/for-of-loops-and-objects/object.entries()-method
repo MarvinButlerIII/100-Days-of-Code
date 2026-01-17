@@ -1,0 +1,19 @@
+// Object.entries() method
+
+const car4 = {
+    speed: 400,
+    color: 'magenta'
+}
+console.log(Object.entries(car4)); // [[ 'speed, 400 ], [ 'color', 'magenta']]
+
+// The values that get returned are 2-member arrays nested inside an arrray.
+// where each array item has two members, the first being property's key,
+// and the second being a property's value
+
+//Example as if:
+
+// [
+// [propertyKey, propertyVal],
+// [propertyKey, propertyVal]
+// ],
+// ...etc
