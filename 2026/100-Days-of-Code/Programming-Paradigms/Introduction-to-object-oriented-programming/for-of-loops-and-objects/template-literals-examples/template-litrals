@@ -1,0 +1,10 @@
+// Delimit strings either with single quotes or double quotes
+
+'Hello, World!'
+"Hello, World!"
+
+// Backtick characters as delimeters introduced in ES6
+
+`Hello, World!`
+//the above code snippet is an example of a template string, 
+// which is also known as a template literal

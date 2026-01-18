@@ -1,0 +1,6 @@
+// ES5 Srings
+
+let noMultiline = "No multi-line strings in ES5";
+console.log("Did you know? " + noMultiline); // Did you know? No multi-line strings in ES5
+
+//using this method does not support the use of multiline strings

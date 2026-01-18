@@ -1,0 +1,36 @@
+// Templaate literal allows for varible interplation
+
+let greet = "Hello";
+let place = "World";
+console.log(`${greet} ${place} !`) // display both variables using template literals | Hello World!
+
+// In ES5 the above exaple would have to be written as follows
+/*
+var greet = "Hello";
+var place = "World";
+console.log(greet + " " + place + "!"); // display bot variables without using template literals | Hello World!
+
+//besides variable interpolation, template strings can span multiple lines
+*/
+
+// Template stings span multiple lines
+
+`Hello,
+World
+!`
+
+// Cant be done using literals (that is, strings delimiting in single or double quotes)
+/*
+"Hello,
+World"
+*/
+
+//the above code, when runk will throw a syntax error.
+
+// Interpolate variables in temple literals syntax actually allows
+
+//It's possible to perform arithmetic operations inside a tremplat literal expression
+console.log(`${1 + 1 + 1 + 1 + 1} starts!`)
+
+//the exaple will console log the following: 5 stars!
+

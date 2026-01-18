@@ -1,0 +1,15 @@
+// ES6 Multi-line template literals
+
+let multiline = `
+    using ES6 
+    backticks, 
+    multi-line 
+    stings are 
+    possible! 
+`;
+
+console.log(multiline); // using ES6 
+                        // backticks, 
+                        // multi-line 
+                        // stings are 
+                        // possible! 

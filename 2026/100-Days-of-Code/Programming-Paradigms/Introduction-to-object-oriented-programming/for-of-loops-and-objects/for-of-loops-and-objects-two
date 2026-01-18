@@ -12,3 +12,8 @@ for (prop in sportsCar) {
 for (prop of Object.keys(sportsCar)) {
     console.log('🎯', prop + ":" + sportsCar[prop]);
 }
+
+// To sum it up the speed and engine properties are from the for in loop 
+// because it draws from the prototype of the sports car object as well as the object istelf.
+// The speed fast property, however comes from the for of loop, 
+// since that iterates over the sports car objects property only. 
