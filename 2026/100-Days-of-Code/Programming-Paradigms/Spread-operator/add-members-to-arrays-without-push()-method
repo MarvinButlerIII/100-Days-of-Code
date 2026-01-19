@@ -1,0 +1,6 @@
+// Using spread operator to easily add one or mor members to an existing array.
+
+let veggies = ['onion', 'parsley'];
+veggies = [...veggies, 'carrot', 'beetroot'];
+console.log(veggies); // [ 'onion', 'parsley', 'carrot', 'beetroot' ]
+

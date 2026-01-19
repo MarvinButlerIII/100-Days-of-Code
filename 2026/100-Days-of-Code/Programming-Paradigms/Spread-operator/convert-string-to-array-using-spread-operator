@@ -1,0 +1,5 @@
+// Easy to spread a string out into a seperate array item.
+
+const greeting = "Hello";
+const arrayOfChars = [...greeting];
+console.log(arrayOfChars); // [ 'H', 'e', 'l', 'l', 'o' ]
