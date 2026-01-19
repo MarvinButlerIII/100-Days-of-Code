@@ -1,5 +1,5 @@
 // The forEach() method
-
+/*
 const fruits = ['kiwi', 'mango', 'apple', 'pear'];
 function appendIndex(fruit, index) {
     console.log(`${index}, ${fruit}`)
@@ -16,11 +16,73 @@ const veggies = ['onion', 'garlic', 'potato'];
 veggies.forEach( function(veggie, index) {
     console.log(`${index}. ${veggie}`);
 });
-
+// 0. onion
+// 1. garlic
+// 2. potato
+*/
 // The filter() method
-
+/*
 const nums = [0,10,20,30,40,50];
 nums.filter( function(num) {
     return num > 20;
     console.log(result); // [30,40,50]
 })
+
+// The map method
+
+[0,10,20,30,40,50].map( function(num) {
+    return num / 10 // [0,1,2,3,4,5]
+})
+
+// Example dmonstrates how to use the object data structure to complete specific task convert an object to an array
+
+const result = [];
+const drone = {
+    speed: 100,
+    color: 'yellow'
+}
+const droneKeys = Object.keys(drone);
+droneKeys.forEach( function(key) {
+    result.push(key, drone[key])
+})
+console.log(result) // ['speed',100,'color','yellow']
+
+//having to do something like this might mean that you have't chosen the correct data structure to work with in your code.
+
+// To make a new Map, you can use the Map constructor.
+
+new Map();
+//a map acn feel very similar to an object in JS but doen't have inheritance or prototy[es
+
+// Here's how its useful as a datfa storage
+*/
+let bestBoxers = new Map();
+bestBoxers.set(1, "The Champion");
+bestBoxers.set(2, "The Runner-up");
+bestBoxers.set(3, "The third place");
+
+console.log(bestBoxers);
+
+// Map(3) {1 => 'The Champion', 2=> 'The Runner-up, 3 => 'The third place'}
+
+// To get specific value use get() method
+
+bestBoxers.get(1); // 'The Champion'
+
+
+// Build a new set using Set constructor
+
+new Set(); //Set(3)
+
+// The Set constructor can, for example, accept an array.
+
+const repetitiveFruits = ['apple','pear','apple','pear','plum','apple'];
+const uniqueFruits = new Set(repetitiveFruits);
+console.log(uniqueFruits); // {'apple','pear','plum'}
+
+// Other data structures in JavaScript
+
+// Queues
+// Linked lists (singly-linked and doubly-linked)
+// Trees
+// Graphs
