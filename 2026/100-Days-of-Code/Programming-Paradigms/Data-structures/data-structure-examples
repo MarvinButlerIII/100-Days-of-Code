@@ -1,0 +1,26 @@
+// The forEach() method
+
+const fruits = ['kiwi', 'mango', 'apple', 'pear'];
+function appendIndex(fruit, index) {
+    console.log(`${index}, ${fruit}`)
+}
+fruits.forEach(appendIndex);
+// 0. kiwi
+// 1. mango
+// 2. apple
+// 3l pear
+
+// The funciton that the forEach() method needs to use passed in directly into the method call
+
+const veggies = ['onion', 'garlic', 'potato'];
+veggies.forEach( function(veggie, index) {
+    console.log(`${index}. ${veggie}`);
+});
+
+// The filter() method
+
+const nums = [0,10,20,30,40,50];
+nums.filter( function(num) {
+    return num > 20;
+    console.log(result); // [30,40,50]
+})
